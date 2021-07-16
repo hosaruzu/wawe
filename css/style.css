@@ -1,0 +1,280 @@
+:root {
+    --wawe-color: #01353E;
+    --text-color: #242121;
+    --title-color: #0D302C;
+    --hover-color: #00B2A0;
+    --white-color: #FFFFFF;
+    --title-font: 'Raleway', sans-serif;
+    --text-font: 'Roboto Condensed', sans-serif
+}
+
+body {
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--wawe-color);
+    position: relative;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.title::after {
+    align-self: center;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 69px;
+    background-color: var(--hover-color);
+    transform: translate(10px, 20px) rotate(36deg) skewY(324deg);
+}
+
+.header {
+    background: url('../images/header-bg.jpg') no-repeat center center / cover;
+    min-height: 100vh;
+}
+
+.header__top-inner {
+    padding-top: 29px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 185px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 45px;
+}
+
+.menu__list-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--white-color);
+    padding: 0 3px 5px;
+    transition: all .3s;
+}
+
+.menu__list-link:hover {
+    border-bottom: 1px solid var(--hover-color);
+}
+
+.header__content-inner {
+    min-height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    padding-top: 190px;
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 235px;
+    color: var(--title-color);
+}
+
+.header__subtitle {
+    font-style: 400;
+    margin-bottom: auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.header__icon {
+    margin-bottom: 60px;
+}
+
+.about {
+    padding: 190px 0 200px;
+
+}
+
+.about__title {
+    margin-bottom: 96px;
+    text-align: right;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about__inner p {
+    margin-bottom: 30px;
+    max-width: 480px;
+}
+
+.about__text-left {
+    margin-right: 120px;
+}
+
+.about__text-right p:first-child {
+    margin-bottom: 48px;
+}
+
+.about__text-right p:nth-child(2) {
+    margin-bottom: 79px;
+}
+
+.opportunities {
+    display: flex;
+    padding: 180px 0;
+    background-color: #F8F8F8;
+}
+
+.opportunities__title {
+    margin-bottom: 100px;
+}
+
+.opportunities__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.opportunities__item {
+    margin-right: 75px;
+    max-width: 350px;
+}
+
+.opportunities__item:last-child {
+    margin-right: 0;
+}
+
+.opportunities__item-title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    position: relative;
+    height: 50px;
+    padding-left: 115px;
+    max-width: 250px;
+}
+
+.opportunities__item-title--living {
+    background: url('../images/living-icon.svg') no-repeat 28%;
+    padding-top: 10px;
+}
+
+.opportunities__item-title--fly {
+    background: url('../images/fly-icon.svg') no-repeat 30%;
+}
+
+.opportunities__item-title--training {
+    background: url('../images/training-icon.svg') no-repeat 30%;
+}
+
+.opportunities__inner {
+    display: flex;
+}
+
+.opportunities__info {
+    width: 346px;
+    margin-right: 254px;
+    flex: none;
+}
+
+.opportunities__info-item {
+    margin-bottom: 13px;
+    padding-top: 10px;
+}
+
+.opportunities__info-item-text {
+    font-weight: 400;
+    font-size: 24px;
+    position: relative;
+}
+
+.opportunities__info-item-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 15px;
+}
+
+.opportunities__info-item-text--comming {
+    padding-left: 210px;
+}
+
+.opportunities__info-item-text--comming::before {
+    width: 200px;
+    background: url('../images/vave-1-icon.svg') no-repeat;
+}
+
+.opportunities__info-item-text--training {
+    padding-left: 257px;
+}
+
+.opportunities__info-item-text--training::before {
+    width: 247px;
+    background: url('../images/vave-2-icon.svg') no-repeat;
+}
+
+.opportunities__info-item-text--happy {
+    padding-left: 303px;
+}
+
+.opportunities__info-item-text--happy {
+    width: 293px;
+    background: url('../images/vave-3-icon.svg') no-repeat;
+}
+
+.opportunities__text p {
+    margin-bottom: 30px;
+}
+
+.training__title {
+    width: 560px;
+}
+
+.training {
+    background-image: url('../images/training-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+}
+
+.training__inner {
+    width: 510px;
+    margin-right: auto;
+    padding: 200px 0 200px;
+}
+
+.training__title {
+    margin-bottom: 100px;
+}
+
+.training__text p {
+    margin-bottom: 30px;
+}
