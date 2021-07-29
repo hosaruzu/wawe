@@ -60,6 +60,10 @@ body {
     margin-right: 185px;
 }
 
+.menu__toggle {
+    display: none;
+}
+
 .menu__list {
     display: flex;
     justify-content: space-between;
@@ -101,7 +105,7 @@ body {
 }
 
 .header__subtitle {
-    font-style: 400;
+    font-weight: 400;
     margin-bottom: auto;
     font-size: 24px;
     line-height: 28px;
@@ -270,7 +274,7 @@ body {
 .training__inner {
     width: 510px;
     margin-right: auto;
-    padding: 200px 0 270px;
+    padding: 80px 0;
 }
 
 .training__title {
@@ -418,13 +422,12 @@ body {
 
 .gallery__numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 200px;
 }
 
 .gallery__numbers-item {
-    margin-right: 100px;
     font-weight: 700px;
     font-size: 64px;
     line-height: 75px;
@@ -536,7 +539,6 @@ ul.slick-dots {
 .prices__items {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 ul.prices__item {
@@ -713,4 +715,416 @@ ul.prices__item {
 
 .footer__logo {
     display: inline-block;
+}
+
+@media (max-width: 1370px) {
+    .header__title {
+        padding-top: 130px;
+    }
+
+    .training__inner {
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about__title,
+    .opportunities__title,
+    .training__title,
+    .gallery__title,
+    .blog__title,
+    .team__title,
+    .prices__title,
+    .contacts__title {
+        margin-bottom: 60px;
+    }
+
+    .about__inner p {
+        max-width: 100%;
+    }
+
+    .about__text-left {
+        margin-right: 0;
+    }
+
+    .about__text-right p:nth-child(2) {
+        margin-bottom: 0;
+
+    }
+
+    .opportunities {
+        padding: 60px 0;
+    }
+
+    .opportunities__items {
+        flex-wrap: wrap;
+    }
+
+    .opportunities__inner {
+        flex-wrap: wrap;
+    }
+
+    .opportunities__item {
+        margin-bottom: 40px;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .training {
+        min-height: 0;
+    }
+
+    .training__inner {
+        padding: 0;
+    }
+
+    .blog__background {
+        padding: 80px 0;
+    }
+
+    .blog-slider__inner {
+        margin-bottom: 100px;
+    }
+
+    .blog__slider-title {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .prices,
+    .contacts {
+        padding: 75px 0;
+    }
+
+    .prices__items {
+        column-gap: 20px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 1150px) {
+    .training {
+        background-image: none;
+        min-height: 0;
+    }
+
+    .training__inner {
+        margin-right: 0;
+        width: 100%
+    }
+
+    .training__title {
+        max-width: 100%;
+        text-align: end;
+    }
+
+    .blockquote__container,
+    .gallery__video,
+    .gallery__numbers,
+    .blog,
+    .contacts__inner {
+        margin-bottom: 75px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .logo {
+        margin-right: 125px;
+    }
+
+    .header__title {
+        font-size: 170px;
+        line-height: 210px;
+    }
+
+    .team__items {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 975px) {
+    .logo {
+        margin-right: 70px;
+        z-index: 2;
+    }
+
+    .gallery__content {
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .contacts__inner {
+        flex-wrap: wrap;
+    }
+
+    .contacts__form {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .contacts__info {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 895px) {
+
+
+    .title {
+        font-size: 32px;
+    }
+
+    .title::after {
+        width: 4px;
+        height: 32px;
+    }
+
+    .header__top-inner {
+        justify-content: space-between;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        background-color: var(--wawe-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        transform: translateY(-200%);
+        transition: .3s all;
+    }
+
+    .menu__list--active {
+        transform: translateY(0);
+    }
+
+    ul.menu__list {
+        padding: 36px 0 24px;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+    }
+
+    .menu__list-item {
+        padding-bottom: 12px;
+    }
+
+    .menu__list-link {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .menu__toggle {
+        display: block;
+        position: relative;
+        z-index: 2;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    .menu path,
+    .menu rect {
+        fill: #fff;
+    }
+
+    .header__title {
+        font-size: 120px;
+        line-height: 170px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .opportunities__item-title {
+        font-size: 18px;
+    }
+
+    .opportunities__info {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .opportunities__items {
+        margin-bottom: 60px;
+    }
+
+    .gallery__btn {
+        margin-right: 0;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .gallery__numbers {
+        flex-wrap: wrap;
+    }
+
+    .gallery__numbers-item {
+        margin-bottom: 35px;
+    }
+
+    .blog__slider-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .team {
+        padding-bottom: 75px;
+    }
+
+    .prices__items {
+        column-gap: 0;
+        flex-wrap: wrap;
+
+    }
+
+    ul.prices__item {
+        margin: 0 auto 25px;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .gallery__content {
+        display: block;
+        column-count: 3;
+    }
+
+    .gallery__item {
+        margin-bottom: 20px;
+    }
+
+    .gallery__add {
+        padding: 14px 42px 14px;
+        font-size: 18px;
+        max-width: 350px;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+
+    .blockquote {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .blockquote__author {
+        font-size: 12px;
+        line-height: 16px;
+        padding-right: 10px;
+    }
+
+    .contacts__info {
+        padding-right: 90px;
+    }
+
+    .contacts__info p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .contacts__info p+p {
+        margin-top: 25px;
+    }
+
+    .socials__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socials__list-item {
+        margin-bottom: 20px;
+    }
+
+    .form button {
+        padding: 23px 88px
+    }
+}
+
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 14px;
+    }
+
+    .header__title {
+        font-size: 70px;
+        line-height: 125px;
+        padding-top: 146px;
+    }
+
+    .header__subtitle {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .gallery__content {
+        column-count: 2;
+    }
+
+    .gallery__add {
+        max-width: 250px;
+    }
+
+    .gallery__numbers {
+        display: block;
+        text-align: center;
+    }
+
+    .training__title {
+        text-align: center;
+    }
+
+    .team__items {
+        display: block;
+    }
+
+    .team__item {
+        margin-bottom: 25px;
+    }
+
+    .team__item img {
+        margin: 0 auto 5px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .opportunities__info-item-text--happy {
+        padding-left: 265px;
+        width: 249px;
+    }
+
+    .gallery__btn {
+        font-size: 14px;
+    }
+
+    .blog-slider__inner {
+        margin-left: 0;
+    }
 }
